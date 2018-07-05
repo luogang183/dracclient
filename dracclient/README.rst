@@ -8,8 +8,8 @@ Library for managing machines with Dell iDRAC cards.
 Usage：client = client.DRACClient('1.2.3.4', 'root', 'calvin')
 
 由于默认端口为443、默认协议为https，在未添加证书验证情况下，禁用urllib3警告的方法：
-import urllib3
-urllib3.disable_warnings()
+- import urllib3_
+- urllib3.disable_warnings()_
 
 
 Client API
