@@ -1,13 +1,5 @@
-========================
-Team and repository tags
-========================
 
-.. image:: https://governance.openstack.org/tc/badges/python-dracclient.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-python-dracclient
+dracclient
 =================
 
 Library for managing machines with Dell iDRAC cards.
@@ -16,3 +8,41 @@ Library for managing machines with Dell iDRAC cards.
 * Documentation: https://docs.openstack.org/python-dracclient/latest
 * Source: http://git.openstack.org/cgit/openstack/python-dracclient
 * Bugs: https://bugs.launchpad.net/python-dracclient
+
+Usage：client = client.DRACClient('1.2.3.4', 'root', 'calvin')
+
+Client API
+  Power management
+    get_power_state
+    set_power_state
+  Boot management
+    list_boot_modes
+list_boot_devices
+change_boot_device_order
+BIOS configuration
+list_bios_settings
+set_bios_settings
+commit_pending_bios_changes
+abandon_pending_bios_changes
+RAID management
+list_raid_controllers
+list_virtual_disks
+list_physical_disks
+create_virtual_disk
+delete_virtual_disk
+commit_pending_raid_changes
+abandon_pending_raid_changes
+Inventory Management
+list_cpus
+list_memory
+list_nics
+Job management
+list_jobs
+get_job
+create_config_job
+delete_pending_config
+Lifecycle controller management
+get_lifecycle_controller_version
+
+
+
