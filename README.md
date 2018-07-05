@@ -13,10 +13,10 @@ import urllib3
 urllib3.disable_warnings()
 
 
-Client API
-  Power management
-    get_power_state
-    set_power_state
+Client API  
+  Power management  
+    get_power_state  
+    set_power_state  
   Boot management
 	list_boot_modes
 	list_boot_devices
